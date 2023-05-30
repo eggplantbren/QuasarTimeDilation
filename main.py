@@ -723,7 +723,7 @@ plt.savefig('i_tau_upper.png',dpi=300)
 Emcee 
 """
 
-import emcee
+#import emcee
 import scipy.stats as sp 
 
 z_fit1 = np.concatenate((z[ind_g1],z[ind_r1],z[ind_i1]))
