@@ -811,7 +811,7 @@ sampler.run_mcmc(p0, 25000, progress=True)
 
 def prior_transform(u):
     """Transforms the uniform random variable `u ~ Unif[0., 1.)`
-    to the parameter of interest `x ~ Unif[-10., 10.)`."""
+    to the parameter of interest `x ~ Unif[1, 5)`."""
 
     x = 1. + 4*u 
 
