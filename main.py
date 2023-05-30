@@ -815,8 +815,9 @@ def prior_transform(u):
 
     x = 1. + 4*u 
 
-    # This is n
-    x[0] = 1 + 1e-6*(u[0]-0.5)
+    # This is n set to 1. Change the first term here to set it to another
+    # value, or comment out this line to let n be free.
+    # x[0] = 1 + 1e-6*(u[0]-0.5)
 
     return x
 
