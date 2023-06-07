@@ -60,5 +60,4 @@ def prior_transform(u):
     return x
 ```
 
-For
 
