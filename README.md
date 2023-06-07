@@ -33,7 +33,14 @@ Information = 5.568074435862172 nats.
 Effective sample size = 1.000000021225817
 ```
 
-log(Z) is the marginal likelihood.
+log(Z) is the marginal likelihood. For more information about Diffusive Nested
+Sampling, see [this paper](https://www.jstatsoft.org/index.php/jss/article/view/v086i07/v86i07.pdf),
+but be aware that the version shipped with the paper contains a bug. It is
+recommended that you install from the `master` branch of the
+[DNest4 git repository](https://github.com/eggplantbren/DNest4).
+
+Changing the model
+==================
 
 By default, the model sampled is the favoured one, with the parameter n fixed
 to 1. To modify the model, follow the instructions in the comment in
@@ -53,4 +60,5 @@ def prior_transform(u):
     return x
 ```
 
+For
 
